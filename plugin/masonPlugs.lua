@@ -41,6 +41,8 @@ require('lint').linters_by_ft = {
     markdown = { 'vale' },
     python = { 'pylint' },
     cpp = { 'cpplint' },
+    js = {'quick_lint_js'},
+    jsx = {'quick_lint_js'},
 }
 
 vim.api.nvim_create_autocmd({ "BufWritePost", "InsertLeave", "TextChanged" }, {
