@@ -44,4 +44,13 @@ return require('packer').startup(function(use)
     }
 
     use 'MrcJkb/haskell-tools.nvim'
+
+    use 'folke/trouble.nvim'
+
+    use({
+        "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
+        config = function()
+            require("lsp_lines").setup()
+        end,
+    })
 end)
